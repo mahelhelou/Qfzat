@@ -12,6 +12,10 @@
   padding-bottom: 1.5rem;
 }
 
+.mr-0 {
+  margin-right: 0;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.25rem;
@@ -74,12 +78,37 @@ header {
   padding: 1.5rem 0;
 }
 
-.inputs input {
-  width: 50%;
+.inputs input,
+.inputs select {
+  width: 90%;
   height: 2.5rem;
-  border-radius: 1.5rem;
   padding: 0 1rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+}
+
+.inputs input {
+  border-radius: 1.5rem;
+}
+
+.inputs select {
+  height: 60px;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+.inputs select option {
+  position: relative;
+}
+
+.inputs select option img {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+select {
+  color: rgba(0, 0, 0, .5);
 }
 
 .inputs .input-option {
@@ -92,15 +121,16 @@ header {
 .buttons {
   padding: 3rem 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .buttons .btn {
   padding: .75rem 4rem;
+  margin-bottom: 1rem;
   border-radius: 1rem;
-  margin-right: 2rem;
-  background-color: #792882;
+  background: linear-gradient(to right, #2E2564, #4C266F, #872989);
   color: #fff;
   border: none;
   font-size: 1.25rem;
@@ -108,7 +138,7 @@ header {
 }
 
 .buttons .btn-lg {
-  width: 33.3333%;
+  width: 66.6666%;
   display: block;
 }
 
@@ -132,4 +162,25 @@ header {
   width: 50%;
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  .inputs input,
+  .inputs .input-option,
+  .inputs select {
+    width: 50%;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .buttons .btn {
+    margin-right: 2rem;
+  }
+
+  .buttons .btn-lg {
+    width: 33.3333%;
+  }
 }
