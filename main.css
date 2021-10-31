@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General classes */
+.py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+}
+
+.wrapper {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo-holder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.logo-holder img {
+  height: 25px;
+}
+
+.icon-holder {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-holder.bordered {
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px dashed #333;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.icon-holder.bordered img {
+  margin-bottom: 2rem;
+}
+
+.inputs {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.inputs input {
+  width: 50%;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+  padding: 0 1rem;
+  font-size: 1.25rem;
+}
+
+.inputs .input-option {
+  display: block !important;
+  border-radius: .5rem !important;
+  margin-bottom: 1rem;
+  border-color: #f7f7f7;
+}
+
+.buttons {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons .btn {
+  padding: .75rem 4rem;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  background-color: #792882;
+  color: #fff;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.buttons .btn-lg {
+  width: 33.3333%;
+  display: block;
+}
+
+.input-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.input-btn button {
+  padding: .85rem 1.5rem;
+  font-size: 1.25rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: #792882;
+  color: #fff;
+  font-weight: bold;
+}
+
+.input-btn input {
+  padding: .85rem 1.5rem;
+  width: 50%;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
